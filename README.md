@@ -161,8 +161,8 @@ Debe contener lo siguiente:
 ###### 4. Agrega un resumen del feedback recibido indicando las mejoras a realizar.
 > La coach me indicó que sea más ordenada al momento de hacer mi prototipo, preguntarme ,¿Quién es mi cliente?, ¿En que ayuda al cliente y al usuario?
 ###### 5. Imágen del prototipo final.
-<img src ='imágenes/prototipo1.png'>
-<img src = 'imágenes/prototipo2.png'>
+<img src ='imágenes/prototipo2.png'>
+<img src = 'imágenes/prototipo1.png'>
 
 #### Visualmente (HTML y CSS)
 
