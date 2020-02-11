@@ -1,5 +1,5 @@
 # Tarjeta de crédito válida
-Almendra
+
 ## Índice
 
 * [1. Preámbulo](#1-preámbulo)
@@ -145,17 +145,24 @@ Estos puntos los presentarás en el `README.md`.
 
 Debe contener lo siguiente:
 
-* Un título con el nombre de tu proyecto.
-* Un resumen de 1 o 2 líneas de qué se trata tu proyecto.
-* La imagen final de tu proyecto.
-* Investigación UX:
-  1. Explicar quiénes son los usuarios y los objetivos en relación con el
-    producto.
-  2. Explicar cómo el producto soluciona los problemas/necesidades de dichos
-    usuarios.
-  3. Luego colocarás la foto de tu primer prototipo en papel.
-  4. Agregar un resumen del feedback recibido indicando las mejoras a realizar.
-  5. Imagen del prototipo final.
+##### título con el nombre del Proyecto
+>Validador de tarjeta de crédito.
+##### Resumen de 1 o 2 lineas de que se trata el proyecto
+>este proyecto está dirigido para las personas que, al momento de realizar una compra online, les sale un error al ingresar su tarjeta como medio de pago.
+##### Imagen final del proyecto
+
+##### Investigación Ux
+###### 1.Explicar quiénes son los usuarios y los objetivos en relación con el producto.
+> Los usuarios son las empresas que quieren vender su producto online y necesitan validar que el número de tarjeta que el usuario ingrese sea válido.
+###### 2. Explicar cómo el producto soluciona los problemas/necesidades de dichos usuarios.
+> Este proyecto ayuda a los usuarios entender que la tienda en la cual realizan una compra es segura, porque primero valida su tarjeta.
+###### 3. Luego colocarás una foto de tu primer prototipo en papel.
+>
+###### 4. Agrega un resumen del feedback recibido indicando las mejoras a realizar.
+> La coach me indicó que sea más ordenada al momento de hacer mi prototipo, preguntarme ,¿Quién es mi cliente?, ¿En que ayuda al cliente y al usuario?
+###### 5. Imágen del prototipo final.
+
+
 
 #### Visualmente (HTML y CSS)
 
