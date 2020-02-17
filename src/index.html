@@ -1,38 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Validador de tarjeta de crédito</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-        <h1>VALIDADOR DE TARJETA DE CRÉDITO</h1>
-    </header>
-    <main>
+
+<head>
+  <meta charset="utf-8">
+  <title>Validador de tarjeta de crédito</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1 class="title">VALIDADOR DE TARJETA DE CRÉDITO</h1>
+  </header>
+  <main>
+    <div class="img">
+      <img src="/imagenes/tarjeta.png" alt="tarjeta">
+    </div>
+    <div class="datos" id="cardData">
       <h3>Ingresa los datos de tu tarjeta para validar</h3>
-      <div class="datos" id="cardData">
-      <label for="card_number">Número de tarjeta:
-        <input type="texto" id="cardNumber">
-      </label>
+      <div class="numero">
+        <label for="card_number">Número de tarjeta:
+          <input type="texto" id="cardNumber" required>
+        </label>
+      </div>
       <label for="mes">Mes:
-        <input type="texto" id="cardNumber">
+        <input type="texto" id="cardNumber" required>
       </label>
       <label for="año">Año:
-        <input type="texto" id="cardNumber">
+        <input type="texto" id="cardNumber" required>
       </label>
       <label for="cvc">cvc:
-        <input type="texto" id="cardNumber">
+        <input type="texto" id="cardNumber" required>
       </label>
-      <button type="button" id="validar">¡VALIDAR!</button>
-      </div>
-      <div class="validado" id= "validated">
-        <p>¡¡TU TARJETA ES VÁLIDA</p>
-        <P>¡¡TU TARJETA ES INVÁLIDA!!</P>
-      </div>
-    </main>
-    <footer></footer>
-    
-    <script src="index.js" type="module"></script>
-  </body>
+      <button type="button" id="validar" class="validar">¡VALIDAR!</button>
+
+    </div>
+    <div class="validado" id="validated">
+      <p>¡¡TU TARJETA ES VÁLIDA</p>
+    </div>
+  </main>
+  <footer></footer>
+
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>

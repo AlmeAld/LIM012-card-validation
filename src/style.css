@@ -1,7 +1,8 @@
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
+
 /*main
     position: absolute;
     width: 300px;
@@ -22,10 +23,34 @@ line-height: 25px;
 
 color: #333333;
 }
-#cardData{
-    display: none;
+        */
+.title {
+  text-align: center;
 }
 
-#validated{
-    display: block;
-}*/
+[required] {
+  border: 1px solid #F85E5E;
+}
+
+.validar {
+  font-family: Jua;
+  font-size: 25px;
+  line-height: 8px;
+  background: #F85E5E;
+  border: none;
+  color: beige;
+  margin: 1em;
+  padding: 1em 1em;
+  border-radius: 7em;
+}
+
+.datos {
+  width: 49%;
+  display: inline-block;
+  min-height: 315px;
+}
+
+.img {
+  width: 50%;
+  display: inline-block;
+}
