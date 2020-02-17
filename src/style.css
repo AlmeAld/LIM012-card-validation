@@ -28,9 +28,9 @@ color: #333333;
   text-align: center;
 }
 
-[required] {
+/*[required] {
   border: 1px solid #F85E5E;
-}
+}*/
 
 .validar {
   font-family: Jua;
