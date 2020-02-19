@@ -21,3 +21,4 @@ for(let i=0; i<arr.length; i++){
   }
   suma = suma + n
 } // console.log(suma)
+

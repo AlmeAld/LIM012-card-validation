@@ -28,9 +28,9 @@ color: #333333;
   text-align: center;
 }
 
-/*[required] {
+[required] {
   border: 1px solid #F85E5E;
-}*/
+}
 
 .validar {
   font-family: Jua;
@@ -51,6 +51,6 @@ color: #333333;
 }
 
 .img {
-  width: 50%;
+  width: 25%;
   display: inline-block;
 }
