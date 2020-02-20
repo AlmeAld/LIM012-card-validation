@@ -5,14 +5,14 @@ const validator = {
 export default validator;
 
 const numTarjeta = '4556364607935616';
-//let numero = prompt('¿Cual es el número de tu tarjeta?')
+
 let arr = numTarjeta.split('').reverse()
 let suma = 0;
 let n = 0;
+
 for(let i=0; i<arr.length; i++){
   if(i%2 === 0){
     n= parseInt(arr[i])*2;
-    console.log(n)
     if(n>=10){
       n= (n-10)+1
     } 
@@ -21,4 +21,37 @@ for(let i=0; i<arr.length; i++){
   }
   suma = suma + n
 } // console.log(suma)
+if (suma % 10 === 0) {
+  console.log('tarjeta valida')
+} else {
+  console.log('tarjeta invalida')
+}
 
+
+const numTarjeta = '4556364607935636';
+//let numero = prompt('¿Cual es el número de tu tarjeta?')
+let arr = numTarjeta.split('').reverse()
+let suma = 0;
+let n = 0;
+
+for (let i = 0; i < arr.length; i++) {
+  if (i % 2 === 0) {
+    n = parseInt(arr[i]) * 2;
+    if (n >= 10) {
+      n = (n - 10) + 1
+    }
+  } else {
+    n = parseInt(arr[i])
+  }
+  suma = suma + n;
+}
+
+/*if(suma % 10 === 0){
+  console.log('tarjeta valida')
+}else{
+  console.log('tarjeta invalida')
+}*/
+
+//numTarjeta.substr(12,numTarjeta.length)
+
+numTarjeta.replace(n

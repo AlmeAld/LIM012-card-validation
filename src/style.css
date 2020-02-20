@@ -32,7 +32,7 @@ color: #333333;
   border: 1px solid #F85E5E;
 }
 
-.validar {
+/*.validar {
   font-family: Jua;
   font-size: 25px;
   line-height: 8px;
@@ -42,7 +42,7 @@ color: #333333;
   margin: 1em;
   padding: 1em 1em;
   border-radius: 7em;
-}
+}*/
 
 .datos {
   width: 49%;
@@ -51,6 +51,5 @@ color: #333333;
 }
 
 .img {
-  width: 25%;
-  display: inline-block;
+  grid-column
 }

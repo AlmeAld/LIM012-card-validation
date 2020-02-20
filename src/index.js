@@ -1,6 +1,5 @@
 import validator from './validator.js';
 
-console.log(validator);
 
 const validar = document.getElementById('validar')
 
