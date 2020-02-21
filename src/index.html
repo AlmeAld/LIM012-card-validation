@@ -19,7 +19,7 @@
       <h3>Ingresa los datos de tu tarjeta para validar</h3>
       <div class="numero  ">
         <label for="card_number">Número de tarjeta:
-          <input type="texto" id="cardNumber" required>
+          <input type="texto" id="cardNumber" value="" required>
         </label>
       </div>
       <label for="mes">Mes:
@@ -34,7 +34,7 @@
       <button type="button" id="validar" class="validar">¡VALIDAR!</button>
     </div>
     <div class="validado" id="validated">
-      <p>¡¡TU TARJETA ES VÁLIDA</p>
+      <p id ="numValidado"></p>
       <button>volver</button>
     </div>
   </main>
