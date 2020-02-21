@@ -208,7 +208,7 @@ Para esto debes implementar el **objeto `validator`**, el cual ya se encuentra
 _exportado_ en el _boilerplate_. Este objeto (`validator`) contiene
 dos métodos (`isValid` y `maskify`):
 
-* **`validator.isValid(creditCardNumber)`**: `creditCardNumber` es un `string`
+* **  **: `creditCardNumber` es un `string`
 con el número de tarjeta que se va a verificar. Esta función debe retornar un
 `boolean` dependiendo si es válida de acuerdo al [algoritmo de Luhn](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn).
 
