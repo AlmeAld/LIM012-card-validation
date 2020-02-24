@@ -19,19 +19,19 @@
       <h3>Ingresa los datos de tu tarjeta para validar</h3>
       <div class="numero  ">
         <label for="card_number">Número de tarjeta:
-          <input type="texto" id="cardNumber" value="" required>
+          <input type="texto" id="cardNumber" maxlength="16" value="" required>
         </label>
       </div>
       <label for="mes">Mes:
-        <input type="texto" id="cardNumber" required>
+        <input type="texto" id="cardNumber" maxlength="2" required>
       </label>
       <label for="año">Año:
-        <input type="texto" id="cardNumber" required>
+        <input type="texto" id="cardNumber" maxlength="2" required>
       </label>
       <label for="cvc">cvc:
-        <input type="texto" id="cardNumber" required>
+        <input type="texto" id="cardNumber" maxlength="3" required>
       </label>
-      <button type="button" id="validar" class="validar">¡VALIDAR!</button>
+      <button type="button" id="btnValidar" class="validar">¡VALIDAR!</button>
     </div>
     <div class="validado" id="validated">
       <p id ="numValidado"></p>

@@ -1,21 +1,23 @@
 const validator = {
-  // ...
-  isValid:(creditCardNumber)=>{
+  // el objeto validador tiene dos propiedades isValid y maskify
 
+  isValid:(creditCardNumber)=>{
+    //convertir en array y revertir
     let arr = creditCardNumber.split('').reverse()
     let suma = 0;
-  let n = 0;
+    let n = 0;
   for(let i=0; i<arr.length; i++){
     if(i%2 === 0){
-      n= parseInt(arr[i])*2;
+      n= Number(arr[i])*2;
+      //sumar los dos digitos si excede a 9 
       if(n>=10){
         n= (n-10)+1
       }
   } else{
-    n= parseInt(arr[i])
+    n= Number(arr[i])
   }
   suma = suma + n
-  }
+  } //retornar si la suma es divisible de 10 
   return suma % 10 === 0 ? true : false
   },
 
@@ -24,8 +26,8 @@ const validator = {
  maskify : (creditCardNumber)=>{
     let arr = creditCardNumber.split('')
     let string = '';
-    
-    for(i=0; i < arr.length; i++){
+    //sacar los primeros 12 dígitos para reemplazarlos por #
+    for( let i=0; i < arr.length; i++){
       if(i < 12){
         arr[i] = '#'
         string = string + arr[i]
