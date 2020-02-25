@@ -28,3 +28,6 @@ btnVolver.addEventListener('click', () => {
     window.location.reload(false)
 });
 
+//console.log(validator)
+//console.log(validator.isValid)
+//console.log(validator.isValid('4556364607935616'))
