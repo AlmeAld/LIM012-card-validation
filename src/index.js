@@ -1,14 +1,30 @@
 import validator from './validator.js';
 
-const validar = document.getElementById('validar')
+const btnValidar = document.getElementById('btnValidar')
+const cardData = document.getElementById('cardData')
+const btnVolver = document.getElementById('btnVolver')
+const numValidado = document.getElementById('numValidado')
 
-validar.addEventListener('click',() =>{
-const cardNumber = document.getElementById('creditCardNumber').value
-const cardData = document.getElementById('validar')
-validar.addEventListener('click',() =>{
 
-})
-cardData.style.display='none'
-validated.style.display='none'
+btnValidar.addEventListener('click', () =>{
+  
+    const cardNumber = document.getElementById('cardNumber').value 
+    
+    //console.log(cardNumber,'numero de tarjeta')
+     
+const isValid =  validator.isValid(cardNumber)
 
+    if(isValid === true){
+        numValidado.textContent = validator.maskify(cardNumber) + 'TARJETA VALIDA'        
+    }else{        
+        numValidado.textContent = validator.maskify(cardNumber) + 'TARJETA INVALIDA'        
+    }
+
+}); 
+
+
+btnVolver.addEventListener('click', () => {
+
+    window.location.reload(false)
 });
+
