@@ -1,13 +1,13 @@
 const validator = {
   // el objeto validador tiene dos propiedades isValid y maskify
 
-  isValid:(creditCardNumber)=>{
+  isValid:(cardNumber)=>{
     //convertir en array y revertir
-    let arr = creditCardNumber.split('').reverse()
+    let arr = cardNumber.split('').reverse()
     let suma = 0;
     let n = 0;
   for(let i=0; i<arr.length; i++){
-    if(i%2 === 0){
+    if(i%2 === 1){
       n= Number(arr[i])*2;
       //sumar los dos digitos si excede a 9 
       if(n>=10){
@@ -23,12 +23,12 @@ const validator = {
 
      
 
- maskify : (creditCardNumber)=>{
-    let arr = creditCardNumber.split('')
+ maskify : (cardNumber)=>{
+    let arr = cardNumber.split('')
     let string = '';
     
     for(let i=0; i < arr.length; i++){
-      if(i < 12){
+      if(i < arr.length - 4){
         arr[i] = '#'
         string = string + arr[i]
       }else{
