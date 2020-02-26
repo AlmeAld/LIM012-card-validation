@@ -1,7 +1,7 @@
 import validator from './validator.js';
 
 const btnValidar = document.getElementById('btnValidar')
-const cardData = document.getElementById('cardData')
+//const cardData = document.getElementById('cardData')
 const btnVolver = document.getElementById('btnVolver')
 const numValidado = document.getElementById('numValidado')
 
