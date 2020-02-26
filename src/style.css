@@ -1,3 +1,4 @@
+/*
 .datos {
   display: none;
 }
@@ -11,7 +12,7 @@ body {
   padding: 0;
 }
 
-/*main
+main
     position: absolute;
     width: 300px;
     height: 19px;
@@ -31,7 +32,6 @@ line-height: 25px;
 
 color: #333333;
 }
-        */
 .title {
   text-align: center;
 }
@@ -44,8 +44,8 @@ color: #333333;
   font-family: Jua;
   font-size: 25px;
   line-height: 8px;
-  background: #F85E5E;
   border: none;
+  background: #F85E5E;
   color: beige;
   margin: 1em;
   padding: 1em 1em;
@@ -62,6 +62,7 @@ color: #333333;
 .img {
   grid-column
 }*/
+
 
 .expiracion {
   -webkit-appearance: none;
