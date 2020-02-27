@@ -15,36 +15,43 @@
     <div class="img">
       <img src="/img/tarjeta.png" alt="tarjeta">
     </div>
-    <div class="datos" id="cardData">
-      <h3>Ingresa los datos de tu tarjeta para validar</h3>
-      <div class="numero  ">
-        <label for="card_number">Número de tarjeta:
-          <input type="texto" id="cardNumber" placeholder="4556364607935616" value="" maxlength="16" required>
-        </label>
-      </div>
-      <div class="expiracion">
-        <label for="mes">Mes:
+    <div class="contenedor1">
+      <div class="datos">
+        <h3>Ingresa los datos de tu tarjeta para validar</h3>
+        <div class="numeroTarjeta">
+          <label for="card_number">Número de tarjeta:</label>            
+          <input type="texto" id="cardNumber" placeholder="4556364607935616" value="" maxlength="16" required> 
+        </div>
+        <div class="mes">
+          <label for="mes" class="mes">Mes:</label>
           <input type="texto" id="mes" maxlength="2" placeholder="02" required>
-        </label>
-        <label for="año">Año:
+        </div>
+        <div class="year">
+          <label for="año">Año:</label>
           <input type="texto" id="año" maxlength="2" placeholder="20" required>
-        </label>
-        <label for="cvc">cvc:
+        </div>
+        <div class="cvc">
+          <label for="cvc">cvc:</label>
           <input type="texto" id="cvc" maxlength="3" placeholder="374" required>
-        </label>
+        </div>
+      </div>
+      <div class="btnValidar">
+          <button type="button" id="btnValidar" class="validar">¡VALIDAR!</button>
       </div>
     </div>
-    <button type="button" id="btnValidar" class="validar">¡VALIDAR!</button>
-
-    <div>
-      <p id="numValidado"></p>
-    </div>
-
-    <div class="volver">
-      <button type="button" id="btnVolver">volver</button>
-    </div>
+      
+    <div class="contenedor2">
+      <div class="numValidado">
+        <p id="numValidado"></p>
+      </div>
+      <div class="volver">
+        <button type="button" id="btnVolver">volver</button>
+      </div>
+    </div>   
   </main>
-  <footer></footer>
+  <footer>
+    <p>by : Almendra Maraví Aldana - Laboratoria 2020</p>
+  </footer>
 
   <script src="index.js" type="module"></script>
 </body>

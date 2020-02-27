@@ -1,7 +1,7 @@
 import validator from './validator.js';
 
 const btnValidar = document.getElementById('btnValidar')
-//const cardData = document.getElementById('cardData')
+
 const btnVolver = document.getElementById('btnVolver')
 const numValidado = document.getElementById('numValidado')
 
@@ -9,9 +9,7 @@ const numValidado = document.getElementById('numValidado')
 btnValidar.addEventListener('click', () =>{
   
     const cardNumber = document.getElementById('cardNumber').value 
-    
-    //console.log(cardNumber,'numero de tarjeta')
-     
+         
 const isValid =  validator.isValid(cardNumber)
 
     if(isValid === true){
