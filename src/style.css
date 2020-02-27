@@ -1,4 +1,4 @@
-
+/*
 body {
   margin: 0;
   padding: 0;
@@ -24,7 +24,7 @@ line-height: 25px;
 
 color: #333333;
 }
-        */
+        
 .title {
   text-align: center;
 }
@@ -45,7 +45,7 @@ color: #333333;
   border-radius: 7em;
 }
 
-/*
+
 .datos {
   width: 49%;
   display: inline-block;
@@ -58,4 +58,7 @@ color: #333333;
 
 .expiracion {
   -webkit-appearance: none;
+}
+.img{
+  display: grid;
 }
