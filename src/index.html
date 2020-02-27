@@ -12,36 +12,46 @@
     <h1 class="title">VALIDADOR DE TARJETA DE CRÉDITO</h1>
   </header>
   <main>
-    <div class="img">
-      <img src="/img/tarjeta.png" alt="tarjeta">
-    </div>
-    <div class="datos" id="cardData">
-      <h3>Ingresa los datos de tu tarjeta para validar</h3>
-      <div class="numero  ">
-        <label for="card_number">Número de tarjeta:
-          <input type="texto" id="cardNumber" placeholder="4556364607935616" value="" maxlength="16" required>
-        </label>
+    <div class="contenedor">
+      <div class="img">
+        <img src="/img/tarjeta.png" alt="tarjeta">
       </div>
-      <div class="expiracion">
-        <label for="mes">Mes:
-          <input type="texto" id="mes" maxlength="2" placeholder="02" required>
-        </label>
-        <label for="año">Año:
-          <input type="texto" id="año" maxlength="2" placeholder="20" required>
-        </label>
-        <label for="cvc">cvc:
-          <input type="texto" id="cvc" maxlength="3" placeholder="374" required>
-        </label>
+      <div class="datos" id="cardData">
+        <h3>Ingresa los datos de tu tarjeta para validar</h3>
+        <div class="numero">
+          <label for="card_number">Número de tarjeta:
+            <div class="numeroTarjeta">
+              <input type="texto" id="cardNumber" placeholder="4556364607935616" value="" maxlength="16" required>
+            </div>
+          </label>
+        </div>
+        <div class="expiracion">
+          <label for="mes" class="mes">Mes:
+            <div class="mes">
+              <input type="texto" id="mes" maxlength="2" placeholder="02" required>
+            </div>
+          </label>
+          <label for="año">Año:
+            <div class="age">
+              <input type="texto" id="año" maxlength="2" placeholder="20" required>
+            </div>
+          </label>
+          <label for="cvc">cvc:
+            <div class="cvc">
+
+              <input type="texto" id="cvc" maxlength="3" placeholder="374" required>
+            </div>
+          </label>
+        </div>
+        <div>
+          <p id="numValidado"></p>
+        </div>
       </div>
-    </div>
-    <button type="button" id="btnValidar" class="validar">¡VALIDAR!</button>
+      <button type="button" id="btnValidar" class="validar">¡VALIDAR!</button>
 
-    <div>
-      <p id="numValidado"></p>
-    </div>
-
-    <div class="volver">
-      <button type="button" id="btnVolver">volver</button>
+      <div class="volver">
+        <button type="button" id="btnVolver">volver</button>
+      </div>
     </div>
   </main>
   <footer></footer>

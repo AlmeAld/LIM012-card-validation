@@ -29,8 +29,7 @@ const validator = {
     
     for(let i=0; i < arr.length; i++){
       if(i < arr.length - 4){
-        arr[i] = '#'
-        string = string + arr[i]
+        string = string + '#'
       }else{
         string = string + arr[i]
       }
