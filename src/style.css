@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+/*oculto el contenedos 2 al cargar la página*/
 .contenedor2 {
   display: none;
 }
@@ -7,10 +12,6 @@ title {
 }
 
 /*
-body {
-  margin: 0;
-  padding: 0;
-}
 
 main
     position: absolute;
@@ -36,9 +37,7 @@ color: #333333;
   text-align: center;
 }
 
-[required] {
-  border: 1px solid #F85E5E;
-}
+
 
 .validar {
   font-family: Jua;
@@ -53,15 +52,8 @@ color: #333333;
 }
 
 
-.datos {
-  width: 49%;
-  display: inline-block;
-  min-height: 315px;
-}
 
-.img {
-  grid-column
-}
+
   .img {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -69,21 +61,26 @@ color: #333333;
     grid-row-end: 4;
 }*/
 
-
+/* desaparecemos las flechas por default que tiene el input tipo 'number' */
 .expiracion {
   -webkit-appearance: none;
 }
 
-/*con css grid, definimos dos columnas de 800 x 800 y dos filas de 700 x 50 */
+/*con css grid, definimos dos columnas de fracciones iguales */
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
+/* con [] (¡¡¡¡¡falta descripcion aqui!!!!!!)*/
 [required] {
   border: 1px solid #F85E5E;
+  width: 53px;
+  height: 21px;
 }
-
+/* al input con class cardNumber le damos un ancho */
+.cardNumber{
+  width: 348px;
+}
 /*
 .validar {
   font-family: Jua;
@@ -97,15 +94,30 @@ main {
   border-radius: 8em;
 }
 */
-.datos {
-  display: grid;
-  grid-template: repeat(3, 250px)/repeat(3, 380px);
-}
 
+/* >dentro del div datos, creamos 3 filas de 100px y 3 filas de 140px
+   > con grid-row-gap: indicamos el espacio que va existir entre las filas y de igual manera con las columnas     */
+.datos {
+  display: grid; /* le indicamos al padre que vamos a usar css grid*/
+  grid-template: repeat(3,100px)/repeat(3, 140px);
+  grid-row-gap: 23px;
+  grid-column-gap: 61px;
+}
+/* a la etiqueta h3 que está dentro de DATOS, con grid-column le decimos que tome tamaño desde la linea 1 hasta -1(-1 indica que va ocupar todos los espacios que tiene) de forma vertical */
 h3 {
   grid-column: 1/-1;
 }
-
+/*  al div con clase numeroTarjeta que está dentro de DATOS, le indicamos que tome tamaño desde la linea 1 hasta -1 de forma horizontal*/
 .numeroTarjeta {
   grid-column: 1/-1;
 }
+/* a los labels con class 'expiracion' le indicamos que tome todo el ancho para que el input baje*/
+.expiracion{
+  display: block;
+  
+}
+/* */
+/* */
+/* */
+/* */
+/* */
