@@ -16,9 +16,9 @@ btnValidar.addEventListener('click', () =>{
     const isValid =  validator.isValid(cardNumber)
     
     if(isValid === true){
-        numValidado.textContent = validator.maskify(cardNumber) + 'TARJETA VALIDA'        
+        numValidado.textContent = validator.maskify(cardNumber) + ' TARJETA VALIDA'        
     }else{        
-        numValidado.textContent = validator.maskify(cardNumber) + 'TARJETA INVALIDA'        
+        numValidado.textContent = validator.maskify(cardNumber) + ' TARJETA INVALIDA'        
     }
     contenedor2.style.display='block'
     contenedor1.style.display='none'

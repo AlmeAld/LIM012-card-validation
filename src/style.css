@@ -1,14 +1,14 @@
-body {
-  margin: 0;
-  padding: 0;
-}
+@import url('https://fonts.googleapis.com/css?family=Inder|Jua|Righteous&display=swap');
+
 /*oculto el contenedos 2 al cargar la página*/
 .contenedor2 {
   display: none;
 }
 
-title {
-  position: absolute;
+.title {
+  text-align: center;
+  font-family: Righteous;
+
 }
 
 /*
@@ -39,26 +39,15 @@ color: #333333;
 
 
 
-.validar {
-  font-family: Jua;
-  font-size: 25px;
-  line-height: 8px;
-  border: none;
-  background: #F85E5E;
-  color: beige;
-  margin: 1em;
-  padding: 1em 1em;
-  border-radius: 7em;
-}
 
 
 
 
-  .img {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 4;
+.img {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 4;
 }*/
 
 /* desaparecemos las flechas por default que tiene el input tipo 'number' */
@@ -66,58 +55,121 @@ color: #333333;
   -webkit-appearance: none;
 }
 
+/* con pading-top empujamos todo el body desde arriba hacia abajo*/
+body {
+  padding-top: 43px;
+  color: #0F1C70;
+}
+
+/* al div de la imagen le decimos que se ubique al centro*/
+.img {
+  display: grid;
+  justify-content: end
+}
+
 /*con css grid, definimos dos columnas de fracciones iguales */
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1177px 472px;
 }
+
 /* con [] (¡¡¡¡¡falta descripcion aqui!!!!!!)*/
 [required] {
-  border: 1px solid #F85E5E;
+  border: 1px solid #FF4676;
   width: 53px;
   height: 21px;
+  outline: none;
 }
+
 /* al input con class cardNumber le damos un ancho */
-.cardNumber{
+.cardNumber {
   width: 348px;
 }
-/*
-.validar {
-  font-family: Jua;
-  font-size: 25px;
-  line-height: 8px;
-  border: none;
-  background: #F85E5E;
-  color: beige;
-  margin: auto;
-  padding: 20px 25px 15px 20px;
-  border-radius: 8em;
-}
-*/
 
 /* >dentro del div datos, creamos 3 filas de 100px y 3 filas de 140px
-   > con grid-row-gap: indicamos el espacio que va existir entre las filas y de igual manera con las columnas     */
+> con grid-row-gap: indicamos el espacio que va existir entre las filas y de igual manera con las columnas     */
 .datos {
-  display: grid; /* le indicamos al padre que vamos a usar css grid*/
-  grid-template: repeat(3,100px)/repeat(3, 140px);
+  display: grid;
+  /* le indicamos al padre que vamos a usar css grid*/
+  grid-template: repeat(3, 100px)/repeat(3, 140px);
   grid-row-gap: 23px;
   grid-column-gap: 61px;
 }
+
 /* a la etiqueta h3 que está dentro de DATOS, con grid-column le decimos que tome tamaño desde la linea 1 hasta -1(-1 indica que va ocupar todos los espacios que tiene) de forma vertical */
 h3 {
   grid-column: 1/-1;
+  align-self: end;
+  font-family: Inder;
 }
+
 /*  al div con clase numeroTarjeta que está dentro de DATOS, le indicamos que tome tamaño desde la linea 1 hasta -1 de forma horizontal*/
 .numeroTarjeta {
   grid-column: 1/-1;
 }
+
 /* a los labels con class 'expiracion' le indicamos que tome todo el ancho para que el input baje*/
-.expiracion{
+.expiracion {
   display: block;
-  
+  line-height: 2.3;
+  font-family: Inder;
 }
+
+/*  al boton validar le aplicamos tipo de letra, clor , tamaño de letra*/
+.validar {
+  font-family: Jua;
+  font-size: 1.3rem;
+  border: none;
+  background: #FF4676;
+  color: #ffffff;
+  border-radius: 13px;
+  PADDING: 14px 37px;
+  cursor: pointer;
+}
+
+/* aplicamos :hover a la clase valida para indicarle que cuando el mouse este sobre el boton va a tener otros estilos*/
+.validar:hover {
+  background: #17D5D1;
+  color: #ffffff;
+}
+
+footer {
+  text-align: center;
+}
+
+/* al div que contiene el boton valiar le indicamos que el boton se va ubicar en la parte superior derecha y que tenga un espacio desde arriba*/
+.btnValidar {
+  display: grid;
+  justify-content: center;
+  padding-top: 83px;
+}
+
+.contenedor2 {
+
+  display: block;
+  text-align: center;
+  padding-top: 118px;
+  line-height: 10.3;
+}
+
 /* */
-/* */
-/* */
-/* */
-/* */
+
+#btnVolver {
+  font-family: Jua;
+  font-size: 1.3rem;
+  border: none;
+  background: #FF4676;
+  color: #ffffff;
+  border-radius: 13px;
+  cursor: pointer;
+  padding: 14px 37px;
+}
+
+#btnVolver:hover {
+  background: #17D5D1;
+  color: #ffffff;
+}
+
+.numValidado {
+  font-family: Inder;
+}
