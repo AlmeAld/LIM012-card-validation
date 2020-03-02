@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Inder|Jua|Righteous&display=swap');
 
 /*oculto el contenedos 2 al cargar la página*/
-.contenedor2 {
+div.contenedor2 {
   display: none;
 }
 
@@ -57,7 +57,6 @@ color: #333333;
 
 /* con pading-top empujamos todo el body desde arriba hacia abajo*/
 body {
-  padding-top: 43px;
   color: #0F1C70;
 }
 
@@ -71,13 +70,14 @@ body {
 main {
   display: grid;
   grid-template-columns: 1177px 472px;
+  grid-template-rows: 674px;
 }
 
 /* con [] (¡¡¡¡¡falta descripcion aqui!!!!!!)*/
 [required] {
   border: 1px solid #FF4676;
   width: 53px;
-  height: 21px;
+  height: 28px;
   outline: none;
 }
 
@@ -135,6 +135,9 @@ h3 {
 
 footer {
   text-align: center;
+  background: #FFE430;
+  margin: 0;
+  padding: 7px;
 }
 
 /* al div que contiene el boton valiar le indicamos que el boton se va ubicar en la parte superior derecha y que tenga un espacio desde arriba*/
