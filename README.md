@@ -162,7 +162,7 @@ Debe contener lo siguiente:
 > La coach me indicó que sea más ordenada al momento de hacer mi prototipo, preguntarme ,¿Quién es mi cliente?, ¿En que ayuda al cliente y al usuario?
 ###### 5. Imágen del prototipo final.
 <img src ='img/prototipo1.png'>
-<img src = "img/prototipo2.png" >
+<img src = "img/prototipo2.png">
 
 #### Visualmente (HTML y CSS)
 

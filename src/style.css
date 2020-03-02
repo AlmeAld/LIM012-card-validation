@@ -63,14 +63,17 @@ body {
 /* al div de la imagen le decimos que se ubique al centro*/
 .img {
   display: grid;
-  justify-content: end
+  justify-content: center;
+}
+
+img{
+  width: 769px;
 }
 
 /*con css grid, definimos dos columnas de fracciones iguales */
 main {
   display: grid;
-  grid-template-columns: 1177px 472px;
-  grid-template-rows: 674px;
+  grid-template-columns: 1fr 1fr;
 }
 
 /* con [] (¡¡¡¡¡falta descripcion aqui!!!!!!)*/
