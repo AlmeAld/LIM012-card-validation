@@ -140,9 +140,12 @@ footer {
   text-align: center;
   background: #FFE430;
   margin: 0;
-  padding: 7px;
 }
 
+.footer{
+  margin: 0;
+  padding: 5px;
+}
 /* al div que contiene el boton valiar le indicamos que el boton se va ubicar en la parte superior derecha y que tenga un espacio desde arriba*/
 .btnValidar {
   display: grid;
