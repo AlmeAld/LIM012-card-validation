@@ -157,12 +157,12 @@ Debe contener lo siguiente:
 ###### 2. Explicar cómo el producto soluciona los problemas/necesidades de dichos usuarios.
 > Este proyecto ayuda a los usuarios entender que la tienda en la cual realizan una compra es segura, porque primero valida su tarjeta.
 ###### 3. Luego colocarás una foto de tu primer prototipo en papel.
->
+<img src = "img/scketch.jpg">|
 ###### 4. Agrega un resumen del feedback recibido indicando las mejoras a realizar.
 > La coach me indicó que sea más ordenada al momento de hacer mi prototipo, preguntarme ,¿Quién es mi cliente?, ¿En que ayuda al cliente y al usuario?
 ###### 5. Imágen del prototipo final.
 <img src ='img/prototipo1.png'>
-<img src = "img/prototipo2.png">
+<img src = "img/prototipo2.png">|
 
 #### Visualmente (HTML y CSS)
 
