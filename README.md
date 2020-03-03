@@ -150,7 +150,7 @@ Debe contener lo siguiente:
 ##### Resumen de 1 o 2 lineas de que se trata el proyecto
 >este proyecto está dirigido para las personas que, al momento de realizar una compra online, les sale un error al ingresar su tarjeta como medio de pago.
 ##### Imagen final del proyecto
-<img src = "img/captura.png">
+<img src = "img/Captura.png">
 
 ##### Investigación Ux
 ###### 1.Explicar quiénes son los usuarios y los objetivos en relación con el producto.
